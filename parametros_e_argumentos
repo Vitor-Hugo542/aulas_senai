@@ -1,0 +1,14 @@
+# Parâmetros com valor padrão (default)
+def saudacao(nome, mensagem ="Bem-vindo!"):
+    print(f"Olá, {nome}! {mensagem}")
+
+nome = str(input("Qual seu nome: ")) # Olá, {nome}! Bem vindo!
+
+saudacao(nome)
+
+# Argumentos nomeados (keyword args)
+def criar_usuario(nome, idade, admin =False):
+    print(f"{nome} | {idade} anos | admin={admin}")
+
+idade = str(input("Dígite sua idade: "))
+criar_usuario(nome,idade)
